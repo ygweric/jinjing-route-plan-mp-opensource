@@ -1,0 +1,80 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "jinjing-route-plan-opensource",
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": false,
+    "preloadBackgroundData": false,
+    "bigPackageSizeSupport": true
+  },
+  "libVersion": "3.0.2",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "查看分享线路",
+          "pathName": "pages/route/index",
+          "query": "sharedRouteName=天通西苑一区_116.409_40.065-北京京都儿童医院急诊_116.357_40.080",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "查看线路-马泉营-西大坨村",
+          "pathName": "pages/route/index",
+          "query": "fromAddressStr={\"name\":\"马泉营\",\"location\":\"116.508558,40.037641\"}&toAddressStr={\"name\":\"西大坨村\",\"location\":\"116.69361046528175,40.03447517541219\"}",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "查看线路",
+          "pathName": "pages/route/index",
+          "query": "fromAddressStr={\"name\":\"天通西苑一区\",\"location\":\"116.408582,40.065250\"}&toAddressStr={\"name\":\"北京京都儿童医院急诊\",\"location\":\"116.357432,40.080168\"}",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "点位说明",
+          "pathName": "pages/description/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "加微信",
+          "pathName": "pages/addWechat/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "设置",
+          "pathName": "pages/setting/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "摄像头详情",
+          "pathName": "pages/cameraDetail/index",
+          "query": "marker={\"cameraId\":\"1300\",\"name\":\"太平庄东路与中滩村北三街路口南200米 南北双向\",\"createDate\":\"2021-02-20T16:00:00.000Z\",\"longitude\":116.427,\"latitude\":40.0624,\"type\":\"inner6Actived\",\"images\":\"/upload/image/20210221/16138409155621641.jpg,/upload/image/20210221/16139198553502653.jpg\",\"createdAt\":\"2024-04-25T10:54:21.893Z\",\"updatedAt\":\"2024-04-26T06:55:27.000Z\",\"iconPath\":\"/assets/images/hl_poi/inner6Actived.png\",\"id\":1034,\"width\":40,\"height\":40,\"callout\":{\"content\":\"太平庄东路与中滩村北三街路口南200米 南北双向\",\"padding\":10,\"borderRadius\":2,\"display\":\"ALWAYS\"}}",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "编辑线路",
+          "pathName": "pages/editRoute/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "选择位置",
+          "pathName": "pages/chooseLocation/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

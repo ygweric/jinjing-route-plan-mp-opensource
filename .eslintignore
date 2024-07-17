@@ -1,0 +1,6 @@
+/*.json
+/*.js
+dist
+dist-prod
+src/miniappShared/*
+components.d.ts

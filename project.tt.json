@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "jinjingCamera",
+  "description": "显示北京进京证拍摄摄像头，并提供智能规划线路功能",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
