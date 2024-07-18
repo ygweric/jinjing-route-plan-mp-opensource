@@ -111,12 +111,12 @@ ygweric
 ## 创建高德key
 [高德后台](https://console.amap.com/dev/key/app)->我的应用->添加Key->服务平台:Web服务->确认->复制key
 
-![高德LBS接口key-1](/images//get_amap_lbs_key_1.png)
-![高德LBS接口key-2](/images//get_amap_lbs_key_2.png)
+![高德LBS接口key-1](/images/get_amap_lbs_key_1.png)
+![高德LBS接口key-2](/images/get_amap_lbs_key_2.png)
 
 
 
 ## 创建小程序代码上传密钥
 [小程序后台](https://mp.weixin.qq.com/)->开发管理->开发设置->小程序代码上传->小程序代码上传密钥
 
-![小程序代码上传密钥](/images//get_mp_upload_secretkey.png)
+![小程序代码上传密钥](/images/get_mp_upload_secretkey.png)
