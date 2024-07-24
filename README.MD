@@ -73,30 +73,15 @@ todo
 * 欢迎提issue
 * 欢迎提pr
 
-# 兼职外包
-市场环境不好，必须开源节流。有开发需求的老板们可以联系我.
-
-
-## 技术能力
-**js**为主要开发语言，包括 
-* 前端：vue、react、tailwindcss
-* 后端：nestjs, nextjs, expressjs, typeorm, prisma
-* 小程序：taro、uniapp
-* 数据库: mongodb、mysql、redis
-* 浏览器插件：（chrome、firefox，edge）插件、
-* 爬虫、脚本，（nodejs开发）
-
-其他技术： java、python都还算熟悉，不过不是主攻方向。
-
-## 其他作品
-* Chrome 插件 [URL Block](https://github.com/ygweric/chrome-url-block)
-
 
 ## 我的微信
 ygweric
 
 ## 开发群
-![微信开发群二维码](/images/wx_dev_group_qr.jpg)
+加入独立开发微信群-二维码经常更新
+
+![加入独立开发微信群-二维码经常更新](https://raw.githubusercontent.com/ygweric/ygweric.github.io/main/assets/jinjing/indenpendent_dev_group_2_qr.png)
+
 
 
 
