@@ -91,7 +91,7 @@
   import env, { Ad, CameraType, CIPHERS } from '@/src/env';
   import { useAppStore } from '@/src/store';
   import { getMongoRouteCachedName } from '@/src/utils/cache';
-  import { expandLineWithWidth, isMarkerInRegion } from '@/src/utils/geo';
+  import { isMarkerInRegion } from '@/src/utils/geo';
   import { setupAllCameraPois } from '@/src/utils/syncAppData';
   import { fetchData } from '@/utils/api';
   import { IconFont } from '@nutui/icons-vue-taro';
@@ -307,8 +307,16 @@
     const precision = 10;
     const diffGeo = (precision * 0.00001) / 2;
     const polylineFlatPointsWithWidth = [
-      ...expandLineWithWidth(polylineFlatPoints.value, diffGeo),
-      ...expandLineWithWidth(polylineFlatPoints.value.reverse(), diffGeo),
+      ...polylineFlatPoints.value.map(({ longitude, latitude }) => ({
+        longitude: longitude + diffGeo,
+        latitude: latitude + diffGeo,
+      })),
+      ...polylineFlatPoints.value
+        .map(({ longitude, latitude }) => ({
+          longitude: longitude - diffGeo,
+          latitude: latitude - diffGeo,
+        }))
+        .reverse(),
     ];
 
     // 显示线路的polygon实体，判断点会否在改多边形中，方便调试
@@ -387,8 +395,7 @@
     }));
 
     // 测试用，验证flat后的数组和flat之前线路是一致的
-    const precision = 0;
-    const diffGeo = (precision * 0.00001) / 2;
+    const diffGeo = 0.0;
     const flatedPointsPolygon = {
       points: polylineFlatPoints.value.map(({ longitude, latitude }) => ({
         longitude: longitude + diffGeo,
@@ -485,26 +492,7 @@
       getMatchedPois();
       Taro.hideLoading();
 
-      const isTotalSameAvoidPoints =
-        matchedPois.value.length > 0 &&
-        matchedPois.value.every((poi: any) =>
-          avoidPoints.value.some(
-            (point: any) => point.cameraId === poi.cameraId
-          )
-        );
-      if (isTotalSameAvoidPoints) {
-        console.log(
-          `点位避让不开 matchedPois.value: ${matchedPois.value}, avoidPoints.value: ${avoidPoints.value}`
-        );
-        Taro.showModal({
-          title: '规划失败',
-          content: `有点位避让不开，请尝试选择其他起点终点`,
-          showCancel: false,
-        });
-        showMatchedMarkers(); // 查找结束后才添加markers，节省性能
-        routeFindStatus.value = 'findFail';
-        return;
-      }
+      
 
       avoidPoints.value = [...avoidPoints.value, ...matchedPois.value];
 
