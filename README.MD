@@ -74,13 +74,11 @@ todo
 * 欢迎提pr
 
 
-## 我的微信
-ygweric
 
 ## 开发群
 加入独立开发微信群-二维码经常更新
 
-![加入独立开发微信群-二维码经常更新](https://raw.githubusercontent.com/ygweric/ygweric.github.io/main/assets/jinjing/indenpendent_dev_group_2_qr.png)
+! [加入独立开发微信群-二维码经常更新](https://raw.githubusercontent.com/ygweric/ygweric.github.io/main/assets/qr-schedule-update/indenpendent_dev.png)
 
 
 
